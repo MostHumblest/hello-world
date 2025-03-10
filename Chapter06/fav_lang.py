@@ -43,3 +43,16 @@ for lang in fav_langs.values():
 print("the following unique languages have been mentioned:")
 for lang in set(fav_langs.values()):
     print(lang.title())
+
+print('.......')
+favorite_language = {
+    "jen":["python", "ruby"],
+    "sarah":["c"],
+    "edward":["ruby", "go"],
+    "phil":["python", "haskell"],
+}
+
+for name, languages in favorite_language.items():
+    print("\n" + name.title()+"'s favorite languages are:")
+    for language in languages:
+        print("\t" + language.title())
