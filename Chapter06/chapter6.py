@@ -53,3 +53,31 @@ for name in pollees:
         print(name.title() + ", thank you for taking hte survey!")
     else:
         print("Good boy, " + name.title() + ", woof woof")
+
+#6-7
+people = {
+    "ssmith": {
+        'first': 'steve',
+        'last': 'smith',
+        'age': 33,
+        'location': 'Boston',
+    },
+    "kalexa":{
+        'first': 'katie',
+        'last': 'alexandridis',
+        'age':34,
+        'location':'Boston',
+    },
+    "rbrown": {
+        'first': 'russell',
+        'last': 'brown',
+        'age': 32,
+        'location': 'east greenbush',
+    }
+}
+
+for person, info in people.items():
+    name = info['first'] + " " + info['last']
+    age = str(info['age'])
+    loc = info['location']
+    print("\n" + name.title() + " is " + age + " years old and lives in " + loc.title())
