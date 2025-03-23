@@ -55,6 +55,38 @@ for name in pollees:
         print("Good boy, " + name.title() + ", woof woof")
 
 #6-7
+
+person_0 = {"firstName":"Steve",
+          "lastName":"Smith",
+          "age": 33,
+          "city": "Boston"}
+
+person_1 = {"firstName":"Katie",
+          "lastName":"Alexandridis",
+          "age": 34,
+          "city": "Boston"}
+
+person_2 = {"firstName":"Russell",
+          "lastName":"Brown",
+          "age": 32,
+          "city": "East Greenbush",
+          }
+people = [person_0, person_1, person_2]
+
+for p  in people:
+    print(p)
+
+numbers = {"steve": [73, 9],
+           "katie": [3, 11],
+           "larry": [42],
+           "buzz": [8, 14],
+           }
+
+for name, nums in numbers.items():
+    print("\n"+ name.title() +"'s favorite numbers are: ")
+    for num in nums:
+        print(str(num))
+
 people = {
     "ssmith": {
         'first': 'steve',
