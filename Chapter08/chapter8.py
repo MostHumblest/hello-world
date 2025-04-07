@@ -65,7 +65,7 @@ def print_names(names):
         print(n.title())
 print_names(magicians)
 
-#8-10
+#8-10/8-11
 def make_great(names):
     great_names = []
     for n in names:
@@ -74,4 +74,4 @@ def make_great(names):
 great_magicians = make_great(magicians[:])
 print_names(great_magicians)
 print_names(magicians)
-    
+
