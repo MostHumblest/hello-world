@@ -75,3 +75,34 @@ great_magicians = make_great(magicians[:])
 print_names(great_magicians)
 print_names(magicians)
 
+#8-12
+def sandwich_order(name, *toppings):
+    print("\nMaking a sandwich for " +
+          name.title() + "!")
+    print("Sandwich with:")
+    for topping in toppings:
+        print("-" + topping)
+sandwich_order("steve", "ham", "cheese", "mayo")
+sandwich_order("katie", "bacon", "lettuce", "tomato")
+sandwich_order("tomas", "pork", "pickles", "mustard", "swiss")
+
+#8-13
+def build_profile(first, last, **user_info):
+    profile = {}
+    profile['first']= first
+    profile['last'] = last
+    for k, v in user_info.items():
+        profile[k] = v
+    return profile
+user_profile = build_profile("steve", "smith", height="tall", pet_name="larry", wife="katie")
+print(user_profile)
+
+def build_car(make, model, **details):
+    this_car = {}
+    this_car['make'] = make
+    this_car['model'] = model
+    for k,v in details.items():
+        this_car[k] = v
+    return this_car
+my_car = build_car('vw', 'tigin', color='green', fwd='true')
+print(my_car)
