@@ -133,3 +133,26 @@ class Privilages():
 steve = Admin("steve", "smith", user="true", married="true", dog="larry")
 steve.describe()
 steve.priviages.show_privilages()
+
+#9-9 see electric car.py
+
+#9-14
+from random import randint
+class Die():
+    def __init__(self, number):
+        """inits a die with input number of sides"""
+        self.num_sides = number
+    
+    def roll_die(self, number):
+        """rolls die given number of times"""
+        for spot in range(0,number):
+            x = randint(1, self.num_sides)
+            print("roll " + str(spot+1) + ": " + str(x))
+
+six_sided = Die(6)
+ten_sided = Die(10)
+twenty_sided = Die(20)
+
+six_sided.roll_die(10)
+ten_sided.roll_die(10)
+twenty_sided.roll_die(10)
