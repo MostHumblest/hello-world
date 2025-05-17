@@ -1,0 +1,5 @@
+In Python you can create loops
+In Python you can create dictionaries
+In Python you can use lists in dictionaries
+In Python you can make subclasses inherit from super classes
+In Python you can define types
