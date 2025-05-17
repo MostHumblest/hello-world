@@ -32,6 +32,7 @@ name = input("What is your name? ")
 with open(filename, 'w') as file_object:
     file_object.write(name + '\n')
 
+#10-4
 print("\nMulti Entry: (type quit to exit)")
 name = ''
 with open(filename, 'a') as file_object:
@@ -40,4 +41,8 @@ with open(filename, 'a') as file_object:
         if name == 'quit':
             break
         file_object.write(name + '\n')
+
+#10-5
+print("\n 10-5 Programming Poll")
+filename = "programming.txt"
     
