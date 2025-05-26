@@ -1,6 +1,6 @@
 import json
 
-filename = "number.json"
+filename = "chapter10/number.json"
 
 def read_number():
     """reads number if it exists"""
