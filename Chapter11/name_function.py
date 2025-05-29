@@ -1,4 +1,7 @@
-def get_formatted_name(first, middle, last):
+def get_formatted_name(first, last, middle=''):
     """Genetrate a neatly formatted full name."""
-    full_name = first + ' ' + middle + ' ' + last
+    if middle:
+        full_name = first + ' ' + middle + ' ' + last
+    else:
+        full_name = first + ' ' + last
     return full_name.title()
