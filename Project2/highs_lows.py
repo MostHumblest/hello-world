@@ -18,7 +18,7 @@ with open(file_1) as f:
             high = int(row[1])        
             low = int(row[3])
         except ValueError:
-            print(current_date, 'missing data')
+            print(current_date, ' - file1 missing data')
         else:
             dates_1.append(current_date)
             highs_1.append(high)
@@ -41,7 +41,7 @@ with open(file_2) as f:
             high = int(row[1])        
             low = int(row[3])
         except ValueError:
-            print(current_date, 'missing data')
+            print(current_date, ' - file2 missing data')
         else:
             dates_2.append(current_date)
             highs_2.append(high)
@@ -52,7 +52,7 @@ with open(file_2) as f:
 #plot data
 fig = plt.figure(dpi=128, figsize=(10,6))
 plt.plot(dates_1, highs_1, c='red', alpha=0.5)
-plt.plot(dates_2, highs_2, c='red', alpha=0.5)
+plt.plot(dates_2, highs_2, c='blue', alpha=0.5)
 #plt.fill_between(dates_1, highs_1, highs_2, facecolor='blue', alpha=0.1)
 
 plt.title("Daily high and low temperatures - 2014\nDeath Valley, CA", fontsize = 24)
